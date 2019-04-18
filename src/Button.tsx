@@ -1,11 +1,16 @@
 import React from "react"
 import './Button.css'
 
-
-type Props = { size: string; }
-
+type Props = {
+    size?: string;
+    children?: string | JSX.Element;
+}
 
 export default function Button(props: Props) {
 
-  return <div className={props.size + " button"} > button</div >
+    return (
+        <button className={props.size + " button"} >
+            {props.children}
+        </button>
+    )
 } 
