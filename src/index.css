@@ -12,6 +12,9 @@ body {
   align-items: center;
 }
 
+div{
+  margin: 4px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
