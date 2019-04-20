@@ -13,5 +13,5 @@ yarn start
 一个自定义了 props 参数类型的 **函数组件**
 
 
-### src/ButtonReact.tsx
+### src/ButtonReactFunctionComponent.tsx
 一个应用了 React 类型:  React.MouseEventHandler 和 React.FunctionComponent<Props> 的函数组件

@@ -5,7 +5,7 @@ interface Props {
     onClick?: React.MouseEventHandler;
 }
 
-const ButtonReact: React.FunctionComponent<Props> = (props) => {
+const ButtonReactFunctionComponent: React.FunctionComponent<Props> = (props) => {
     return (
         <button className={`button ${props.size}`} onClick={props.onClick}>
             {props.children}
@@ -13,4 +13,4 @@ const ButtonReact: React.FunctionComponent<Props> = (props) => {
     )
 }
 
-export default ButtonReact
+export default ButtonReactFunctionComponent

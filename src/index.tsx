@@ -1,7 +1,7 @@
-import React, {Fragment, MouseEventHandler, SyntheticEvent} from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import Button from './Button';
-import ButtonReact from './ButtonReact';
+import ButtonReactFunctionComponent from './ButtonReactFunctionComponent';
 import './index.css';
 
 
@@ -38,19 +38,19 @@ ReactDOM.render(
 
 
             <div>
-                <ButtonReact
+                <ButtonReactFunctionComponent
                     size="big" onClick={clickHandler}
                 >
                     <span>这是一个 ButtonReact</span>
-                </ButtonReact>
+                </ButtonReactFunctionComponent>
             </div>
 
             <div>
-                <ButtonReact
+                <ButtonReactFunctionComponent
                     size="small" onClick={anotherClickHandler}
                 >
                     <span>这是 另一个 ButtonReact</span>
-                </ButtonReact>
+                </ButtonReactFunctionComponent>
             </div>
         </div>
     </Fragment>
