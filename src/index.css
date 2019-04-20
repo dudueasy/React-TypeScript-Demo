@@ -19,3 +19,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+span.header-description{
+  background: #000;
+  color: #fff;
+  padding: 4px;
+}

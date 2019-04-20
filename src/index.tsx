@@ -19,40 +19,37 @@ const anotherClickHandler: React.MouseEventHandler = (e) => {
 
 ReactDOM.render(
     <Fragment>
-        <div>Hello World
-            <div>
-                <Button size="small">small</Button>
-            </div>
-            <div>
-                <Button>normal</Button>
-            </div>
-            <div>
-                <Button size="big">big</Button>
-            </div>
-
-            <div>
-                <Button size="big">
-                    <span>这个按钮接收了一个 span 元素</span>
-                </Button>
-            </div>
-
-
-            <div>
-                <ButtonReactFunctionComponent
-                    size="big" onClick={clickHandler}
-                >
-                    <span>这是一个 ButtonReact</span>
-                </ButtonReactFunctionComponent>
-            </div>
-
-            <div>
-                <ButtonReactFunctionComponent
-                    size="small" onClick={anotherClickHandler}
-                >
-                    <span>这是 另一个 ButtonReact</span>
-                </ButtonReactFunctionComponent>
-            </div>
+        <div>
+            <p>
+                <span className="header-description"> 以下是自定义的 Button 组件: </span>
+            </p>
+            <Button size="small">small</Button>
+            <Button>normal</Button>
+            <Button size="big">big</Button>
+            <Button size="big">
+                <span>这个按钮接收了一个 span 元素</span>
+            </Button>
         </div>
+
+        <div>
+            <p>
+                <span className="header-description">
+                以下是 Button:React.FunctionComponent 组件
+                </span>
+            </p>
+            <ButtonReactFunctionComponent
+                size="big" onClick={clickHandler}
+            >
+                <span> 这是一个函数组件 </span>
+            </ButtonReactFunctionComponent>
+
+            <ButtonReactFunctionComponent
+                size="small" onClick={anotherClickHandler}
+            >
+                <span> 这是另一个函数组件 </span>
+            </ButtonReactFunctionComponent>
+        </div>
+
     </Fragment>
     ,
     document.getElementById('root')

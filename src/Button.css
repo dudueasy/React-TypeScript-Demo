@@ -1,24 +1,29 @@
 .button {
-  border: 1px solid grey;
-  display: inline-block;
-  border-radius: 4px;
-  padding: 0.6em;
-  box-shadow: 0 0 3px black;
-  font-size: 1em;
+    margin: 2px;
+    border: 1px solid grey;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0.6em;
+    box-shadow: 0 0 3px black;
+    font-size: 1em;
 }
 
-.button.small{
-  font-size: 0.8em;
-  padding: 0.4em;
+.button.small {
+    font-size: 0.8em;
+    padding: 0.4em;
 }
 
-.button.big{
-  font-size: 1.2em;
-  padding: 0.8em;
+.button.big {
+    font-size: 1.2em;
+    padding: 0.8em;
 }
 
-.button:hover{
-  background: rgba(0,0,0,0.9);
-  cursor:pointer;
-  color: white;
+.button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
 }
