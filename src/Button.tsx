@@ -7,7 +7,6 @@ type Props = {
 }
 
 export default function Button(props: Props) {
-
     return (
         <button className={props.size + " button"} >
             {props.children}
