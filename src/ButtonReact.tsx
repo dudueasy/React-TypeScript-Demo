@@ -1,12 +1,13 @@
 import React from "react";
 
 interface Props {
-    size?:string
+    size?: string;
+    onClick?: React.MouseEventHandler<this>;
 }
 
 const ButtonReact: React.FunctionComponent<Props> = (props) => {
     return (
-        <button className={`button ${props.size}`}>
+        <button className={`button ${props.size}`} onClick={props.onClick}>
             {props.children}
         </button>
     )
