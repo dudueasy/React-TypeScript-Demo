@@ -2,6 +2,7 @@ import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import Button from './Button';
 import ButtonReactFunctionComponent from './ButtonReactFunctionComponent';
+import ButtonReactClassComponent from './ButtonReactClassComponent';
 import './index.css';
 
 
@@ -14,6 +15,14 @@ const clickHandler = (e: React.MouseEvent) => {
 const anotherClickHandler: React.MouseEventHandler = (e) => {
     console.log('another <ButtonReact/> is clicked')
     console.log(e)
+}
+
+
+const yetAnotherClickHandler: React.MouseEventHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+    console.log('yet another button is clicked ')
+    console.log(e.currentTarget.style)
+    console.log("e.currentTarget: \n", e.currentTarget)
+    console.log('e.target: \n', e.target)
 }
 
 
@@ -50,6 +59,19 @@ ReactDOM.render(
             </ButtonReactFunctionComponent>
         </div>
 
+        <div>
+            <p>
+                <span className="header-description">
+                以下是 Button:React.ClassComponent 组件
+                </span>
+            </p>
+            <ButtonReactClassComponent
+                yyy={1}
+                onClick={yetAnotherClickHandler}
+            >
+                <span>这是一个类组件</span>
+            </ButtonReactClassComponent>
+        </div>
     </Fragment>
     ,
     document.getElementById('root')

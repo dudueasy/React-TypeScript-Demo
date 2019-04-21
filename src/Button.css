@@ -1,4 +1,4 @@
-.button {
+.button, .button.normal {
     margin: 2px;
     border: 1px solid grey;
     display: inline-block;
