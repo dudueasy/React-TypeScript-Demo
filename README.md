@@ -15,3 +15,7 @@ yarn start
 
 ### src/ButtonReactFunctionComponent.tsx
 一个应用了 React 类型:  React.MouseEventHandler 和 React.FunctionComponent<Props> 的函数组件
+
+
+### src/ButtonReactClassComponent.tsx
+一个应用了 React 泛型类型 ```React.Component<Props, State>``` 的类组件
