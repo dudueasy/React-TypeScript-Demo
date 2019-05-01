@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
     size?: string;
-    onClick?: React.MouseEventHandler;
+    onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const ButtonReactFunctionComponent: React.FunctionComponent<Props> = (props) => {

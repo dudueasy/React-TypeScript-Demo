@@ -6,9 +6,19 @@ import ButtonReactClassComponent from './ButtonReactClassComponent';
 import './index.css';
 
 
-const clickHandler = (e: React.MouseEvent) => {
+//  可以在事件处理函数中, 通过指定 泛型变量 t 来 定义 事件的类型.
+const clickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     console.log('a <ButtonReact/> is clicked')
     console.log(e)
+    console.log(e.currentTarget.style)
+}
+
+// 也可以给事件处理函数定义类型, 并传入泛型变量 t, 这样 ts 就能推断出 事件 的类型.
+const yetAnotherClickHandler: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+    console.log('yet another button is clicked ')
+    console.log(e.currentTarget.style)
+    console.log("e.currentTarget: \n", e.currentTarget)
+    console.log('e.target: \n', e.target)
 }
 
 
@@ -16,15 +26,6 @@ const anotherClickHandler: React.MouseEventHandler = (e) => {
     console.log('another <ButtonReact/> is clicked')
     console.log(e)
 }
-
-
-const yetAnotherClickHandler: React.MouseEventHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-    console.log('yet another button is clicked ')
-    console.log(e.currentTarget.style)
-    console.log("e.currentTarget: \n", e.currentTarget)
-    console.log('e.target: \n', e.target)
-}
-
 
 ReactDOM.render(
     <Fragment>

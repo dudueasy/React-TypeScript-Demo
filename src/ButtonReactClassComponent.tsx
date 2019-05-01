@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 interface Props {
     size?: string,
     yyy?: number,
-    onClick?: React.MouseEventHandler
+    onClick?: React.MouseEventHandler<HTMLButtonElement>
 }
 
 interface State {
@@ -24,7 +24,7 @@ class ButtonReactClassComponent extends React.Component<Props, State> {
         // console.log(this.props.yyy! + 1) // eslint-disable-line
 
         if (this.props.yyy) {
-            console.log(this.props.yyy + 1)
+            console.log(this.props.yyy + 1);
         }
     }
 
@@ -37,9 +37,9 @@ class ButtonReactClassComponent extends React.Component<Props, State> {
                 {this.props.size}
                 {this.state.n}
             </button>
-        )
+        );
     }
 }
 
 
-export default ButtonReactClassComponent
+export default ButtonReactClassComponent;
